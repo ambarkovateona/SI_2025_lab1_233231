@@ -1,0 +1,48 @@
+13. git fetch origin 
+14. git checkout -b 4-sort-tasks-by-priority  -> kreiranje na nova granka i prefrluvanje na istata
+Switched to a new branch '4-sort-tasks-by-priority'
+15. funkcija sort za issue sort tasks by priority
+16.  git add SI2025Lab1Main.java
+warning: in the working copy of 'SI2025Lab1Main.java', LF will be replaced by CR
+LF the next time Git touches it
+
+git commit -m "Implement sort tasks by priority"
+[4-sort-tasks-by-priority 235c0c4] Implement sort tasks by priority
+ 1 file changed, 1 insertion(+), 1 deletion(-)]
+
+17.  git push origin 4-sort-tasks-by-priority   ->sinhronizacija na lokalnata granka so grankata na oddaleceniot repozitorium
+
+19. git checkout -b 5-filter-tasks-by-category
+git add SI2025Lab1Main.java
+ git commit -m "Filter tasks by category"
+git push origin 5-filter-tasks-by-category
+
+git checkout -b 8-mark-a-task-as-completed-by-name
+ git add SI2025Lab1Main.java
+git commit -m "Mark a task as completed by name"
+ git push origin 8-mark-a-task-as-completed-by-name
+
+
+
+22. git merge 5-filter-tasks-by-category
+Updating 29673ab..215ccf6
+Fast-forward
+ SI2025Lab1Main.java | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+23.  git pull origin master
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 917 bytes | 305.00 KiB/s, done.
+From https://github.com/ambarkovateona/SI_2025_lab1_233231
+ * branch            master     -> FETCH_HEAD
+   29673ab..8ccaefc  master     -> origin/master
+Updating 215ccf6..8ccaefc
+Fast-forward
+ SI2025Lab1Main.java | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+
+
+

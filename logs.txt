@@ -1,0 +1,8 @@
+*   8ccaefc Merge pull request #12 from ambarkovateona/8-mark-a-task-as-completed-by-name
+|\  
+| * 72a7e5a Mark a task as completed by name
+| * 215ccf6 Filter tasks by category
+| * 235c0c4 Implement sort tasks by priority
+|/  
+* 29673ab Add starter code
+* 11d8f85 Initial commit
