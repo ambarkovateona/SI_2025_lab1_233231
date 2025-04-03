@@ -80,13 +80,14 @@ class TaskManager {
 
     // 4. Sort tasks by priority
     public void sortTasksByPriority() {
-        // TODO: Implement sorting by priority logic
+        tasks.sort(Comparator.comparing(Task::getPriority)); // HIGH -> MEDIUM -> LOW
     }
 
     // 5. Filter tasks by category
     public List<Task> filterByCategory(String category) {
-        // TODO: Implement filtering logic
-        return new ArrayList<>();
+         return tasks.stream()
+                .filter(task -> task.getCategory().equalsIgnoreCase(category))
+                .toList();
     }
 
     // 6. Find the highest-priority unfinished task
@@ -103,7 +104,12 @@ class TaskManager {
 
     // 8. Mark a task as completed by name
     public void markTaskCompleted(String name) {
-        // TODO: Implement completion logic
+        for (Task task : tasks) {
+        if (task.getName().equalsIgnoreCase(name)) {
+            task.complete();
+            return;
+        }
+    }
     }
 
     // 9. Mark all tasks in a category as completed
